@@ -9,6 +9,7 @@ import org.springframework.jms.support.converter.MessageType;
 public class JmsConfig {
 
     public static final String MY_QUEUE = "my-message-queue";
+    public static final String SEND_RCV_QUEUE = "reply-back-to-me";
 
     public MessageConverter messageConverter() {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
